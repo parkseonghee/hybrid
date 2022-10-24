@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <canvas id='my_canvas' width='320' height='320' style='background:orange'></canvas>
+
+    <script>
+    var my_canvas = document.getElementById('my_canvas');
+    var ctx = my_canvas.getContext('2d');
+    my_canvas.onmousedown = function(event) {
+    	ctx.arc(event.x, event.y, 1000, 1000, 0, true);
+    	ctx.closePath();
+      ctx.fillStyle = "rgb("  + rgb() + "," + rgb() + "," + rgb() + ")"
+      ctx.fill();
+    }
+    my_canvas.onmouseover = function(event) {
+      ctx.arc(event.x, event.y, 1000, 1000, 0, true);
+      ctx.closePath();
+      ctx.fillStyle = "rgb("  + rgb() + "," + rgb() + "," + rgb() + ")"
+      ctx.fill();
+    }
+    my_canvas.onmouseout = function(event) {
+      ctx.arc(event.x, event.y, 1000, 1000, 0, true);
+      ctx.closePath();
+      ctx.fillStyle = "rgb("  + rgb() + "," + rgb() + "," + rgb() + ")"
+      ctx.fill();
+    }
+    function rgb(){
+     return Math.floor(Math.random() * 255);
+    }
+
+    </script>
+
+  </body>
+</html>
