@@ -1,0 +1,46 @@
+  #gamearea .cell {
+      background: transparent;
+      border: 1px solid black;
+      display:inline-block;
+      border: 3px solid;
+      text-align: center;
+      line-height: 2.0;
+      font-family: cursive;
+      border-radius: 20;
+      font-size: 55px;
+      font-weight: bold;
+      overflow:hidden;
+      border-radius: 20;
+      height: 22%;
+      width: 22%;
+
+  }
+  #content{
+      width:600px;
+      height:600px;
+  }
+  
+  #content > div {
+      display: none;
+
+  }
+  #content .on{
+      display: block;
+  }
+
+  
+  #gamearea{
+      width:590px;
+      height:590px;
+    padding : 10px;   
+
+
+  }
+
+  #intro button {
+      background: #2860c5;
+      color: #fff;
+      height: 53px;
+      border-radius: 3px;
+      font-size: 30px;
+  }
