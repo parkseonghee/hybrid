@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>2048 GAME</title>
+        <link rel="stylesheet" href="app2048.css" type="text/css">
+    </head>
+    <script type="text/javascript" src="main.js"></script>
+
+    <script type="text/javascript">
+    	window.onload = function(){
+	   		window.addEventListener("keydown", e => {
+	   			const key = document.getElementById(e.key);
+                var score = 0;
+	   			if (key) { 
+	   				key.classList.add('pressed');
+	   				key.click();
+	   			}
+	       	});
+	       	window.addEventListener("keyup", e => {
+      		  	const key = document.getElementById(e.key);
+      		  	if (key) key.classList.remove('pressed');
+      		});
+    	}
+    	
+    </script>
+    
+    <body>
+    
+    	<div class="container"> 
+			<div id="content">
+	    		<div id="intro" class="on">
+					<button id="startBtn" onClick="start();">START</button>
+				</div>
+
+				<div id="gamearea">
+	                <div class="cell"></div>
+	                <div class="cell"></div>
+	                <div class="cell"></div>
+	                <div class="cell"></div>
+	                <div class="cell"></div>
+	                <div class="cell"></div>
+	                <div class="cell"></div>
+	                <div class="cell"></div>
+	                <div class="cell"></div>
+	                <div class="cell"></div>
+	                <div class="cell"></div>
+	                <div class="cell"></div>
+	                <div class="cell"></div>
+	                <div class="cell"></div>
+	                <div class="cell"></div>
+	                <div class="cell"></div>
+	            </div>
+                <span id="scoreType">score</span>
+                <span id="score">0</span>
+                <button id = "gameover" onClick="start();">GameOver score:0</div>
+		
+	        </div>
+			<div id="styles">
+				<img src="2222.png" alt="">
+				<img id="img1" src="2222.png" alt="">
+				<img id="img2" src="2222.png" alt="">
+				<img id="img3" src="2222.png" alt="">
+				<img id="img4" src="2222.png" alt="">
+				<img id="img5" src="2222.png" alt="">
+			</div>
+
+		        <span>
+			        <div id="ArrowUp" onClick="moveNum(this);"></div>
+		        </span>
+		        <span>
+			        <div id="ArrowLeft" onClick="moveNum(this);"></div>
+			        <div id="ArrowDown" onClick="moveNum(this);"></div>
+			        <div id="ArrowRight" onClick="moveNum(this);"></div>
+		        </span>
+
+        </div>
+    </body>
+</html>
