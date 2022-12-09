@@ -1,0 +1,131 @@
+.pressed {
+    transform: scale(2.0);
+  }
+  
+
+  .container {
+    display: grid;
+    min-height: 100%;
+    align-content: center;
+    justify-content: center;
+}
+
+#gamearea .cell {
+    background: transparent;
+    border: 1px solid #d6ced6;
+    display:inline-block;
+    border: 3px solid;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    overflow:hidden;
+    height: 22%;
+    width: 22%;
+}
+#content{
+    width:400px;
+    height:400px;
+}
+
+#content > div {
+    display: none;
+}
+#content .on{
+    display: block;
+}
+
+
+#gamearea{
+    width:400px;
+    height:400px;
+}
+
+
+#score{
+    border: 2px solid #f2f2f2;
+		    border-radius: 5px;
+		    display: inline-block;
+		    padding: 6px;
+		    margin: 0 1px;
+		    text-align: center;
+            display: none;
+            color: #fff;
+            font-size: 20px;
+}
+#scoreType{
+    display: none;
+    font-size: 40px;
+    font-weight:bolder;
+    color: #fff;
+    text-align: center;
+}
+#lastScore{
+    display: none;
+
+    position: relative;
+}
+#styles{
+    display: none;
+}
+
+img{
+    animation: rotate_image 10s linear infinite;transform-origin: 50% 50%;
+}
+@keyframes rotate_image{
+    100% {
+        transform: rotate(360deg);
+    }
+}   
+#img1{
+    position: relative;
+    top:250px;
+    left: 200px;
+
+}
+
+#img2{
+    position: relative;
+    bottom:300px;
+    right: 200px;
+
+}
+#img3{
+    position: relative;
+    bottom:300px;
+    left: 800px;
+}
+#img4{
+    position: relative;
+    top: 200px;
+    left: 800px;
+}
+
+#img5{
+    position: relative;
+    top: 100px;
+    left: 200px;
+}
+
+#intro{    
+    width: 400px;
+    height: 400px;
+    text-align: center;
+}
+
+#intro #startBtn {
+    background: #2860c5;
+    color: #fff;
+    height: 53px;
+    border-radius: 3px;
+    font-size: 30px;
+}
+
+#gameover {
+    display: none;
+    background: #2860c5;
+    color: #fff;
+    height: 70px;
+    border-radius: 3px;
+    font-size: 30px;
+    font-weight: bold;
+}
